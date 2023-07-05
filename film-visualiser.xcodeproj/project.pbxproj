@@ -14,6 +14,7 @@
 		E15A23E22A531B3A00BA83B9 /* film_visualiserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A23E12A531B3A00BA83B9 /* film_visualiserTests.swift */; };
 		E15A23EC2A531B3B00BA83B9 /* film_visualiserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A23EB2A531B3B00BA83B9 /* film_visualiserUITests.swift */; };
 		E15A23EE2A531B3B00BA83B9 /* film_visualiserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A23ED2A531B3B00BA83B9 /* film_visualiserUITestsLaunchTests.swift */; };
+		E15A23FD2A56072700BA83B9 /* Posters.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15A23FC2A56072700BA83B9 /* Posters.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E15A23E72A531B3B00BA83B9 /* film-visualiserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "film-visualiserUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15A23EB2A531B3B00BA83B9 /* film_visualiserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = film_visualiserUITests.swift; sourceTree = "<group>"; };
 		E15A23ED2A531B3B00BA83B9 /* film_visualiserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = film_visualiserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E15A23FC2A56072700BA83B9 /* Posters.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Posters.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +98,9 @@
 			children = (
 				E15A23D02A531B3A00BA83B9 /* film_visualiserApp.swift */,
 				E15A23D22A531B3A00BA83B9 /* ContentView.swift */,
+				E15A23FA2A55CE4200BA83B9 /* Models */,
 				E15A23D42A531B3A00BA83B9 /* Assets.xcassets */,
+				E15A23FC2A56072700BA83B9 /* Posters.xcassets */,
 				E15A23D62A531B3A00BA83B9 /* Preview Content */,
 			);
 			path = "film-visualiser";
@@ -125,6 +129,13 @@
 				E15A23ED2A531B3B00BA83B9 /* film_visualiserUITestsLaunchTests.swift */,
 			);
 			path = "film-visualiserUITests";
+			sourceTree = "<group>";
+		};
+		E15A23FA2A55CE4200BA83B9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15A23FD2A56072700BA83B9 /* Posters.xcassets in Resources */,
 				E15A23D82A531B3A00BA83B9 /* Preview Assets.xcassets in Resources */,
 				E15A23D52A531B3A00BA83B9 /* Assets.xcassets in Resources */,
 			);
