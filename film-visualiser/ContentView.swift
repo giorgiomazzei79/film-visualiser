@@ -5,7 +5,16 @@
 //  Created by Giorgio Mazzei on 03/07/23.
 //
 
-var films = [
+struct Film: Identifiable {
+     let id = UUID()
+     var title: String
+     var year: Int
+    var poster: String
+    var photo_width: Int
+    var photo_height: Int
+ }
+
+var filmsData = [
   [
     "title": "Avatar: The Way of Water",
     "year": 2022,
@@ -64,6 +73,10 @@ var films = [
   ]
 ]
 
+var films = filmsData.map { (film) -> Film in
+    Film(title: "film.title", year: 2018, poster: "film.poster", photo_width: 1200, photo_height: 1777  )
+}
+
 import SwiftUI
 
 struct ContentView: View {
@@ -73,6 +86,11 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            List {
+                ForEach(films) { film in
+                    Text(film.title)
+                }
+            }
         }
         .padding()
     }
