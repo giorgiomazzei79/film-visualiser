@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E1044E862AEBD5E400A71EB0 /* MovieBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044E852AEBD5E400A71EB0 /* MovieBackdropCard.swift */; };
+		E1044E8A2AEC6EF000A71EB0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1044E892AEC6EF000A71EB0 /* Movie.swift */; };
 		E15A23D12A531B3A00BA83B9 /* film_visualiserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A23D02A531B3A00BA83B9 /* film_visualiserApp.swift */; };
 		E15A23D32A531B3A00BA83B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15A23D22A531B3A00BA83B9 /* ContentView.swift */; };
 		E15A23D52A531B3A00BA83B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15A23D42A531B3A00BA83B9 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		E1044E852AEBD5E400A71EB0 /* MovieBackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCard.swift; sourceTree = "<group>"; };
+		E1044E892AEC6EF000A71EB0 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E15A23CD2A531B3A00BA83B9 /* film-visualiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "film-visualiser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15A23D02A531B3A00BA83B9 /* film_visualiserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = film_visualiserApp.swift; sourceTree = "<group>"; };
 		E15A23D22A531B3A00BA83B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 		E15A23FA2A55CE4200BA83B9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E1044E892AEC6EF000A71EB0 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				E15A23D32A531B3A00BA83B9 /* ContentView.swift in Sources */,
 				E1044E862AEBD5E400A71EB0 /* MovieBackdropCard.swift in Sources */,
+				E1044E8A2AEC6EF000A71EB0 /* Movie.swift in Sources */,
 				E15A23D12A531B3A00BA83B9 /* film_visualiserApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
