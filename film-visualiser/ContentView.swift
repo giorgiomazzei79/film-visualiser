@@ -5,6 +5,9 @@
 //  Created by Giorgio Mazzei on 03/07/23.
 //
 
+import SwiftUI
+import Foundation
+
 struct Film: Identifiable {
      let id = UUID()
      var title: String
@@ -13,8 +16,27 @@ struct Film: Identifiable {
     var photo_width: Int
     var photo_height: Int
  }
+let string = "[{title: \"Avatar: The Way of Water\",\n    year: 2022,\n    poster: \"1.jpg\",\n    photo_width: 900,\n    photo_height: 1289},{title: \"A Beautiful Life\",\n    year: 2023,\n    poster: \"2.jpg\",\n    photo_width: 450,\n    photo_height: 630}]"
 
-var filmsData = [
+let data = string.data(using: .utf8)!
+
+struct Form: Codable {
+    let id: Int
+    let name: String
+    let description: String?
+
+    private enum CodingKeys: String, CodingKey {
+        case id = "form_id"
+        case name = "form_name"
+        case description = "form_desc"
+    }
+}
+
+let f = try! JSONDecoder().decode([Form].self, from: data)
+
+
+
+var filmsData: Array<Dictionary<String, Any>> = [
   [
     "title": "Avatar: The Way of Water",
     "year": 2022,
@@ -74,10 +96,16 @@ var filmsData = [
 ]
 
 var films = filmsData.map { (film) -> Film in
-    Film(title: "film.title", year: 2018, poster: "film.poster", photo_width: 1200, photo_height: 1777  )
+    Film(
+        title: film["title"] as! String,
+        year: film["year"] as! Int,
+        poster: film["poster"] as! String,
+        photo_width: film["photo_width"] as! Int,
+        photo_height: film["photo_height"] as! Int  
+    )
 }
 
-import SwiftUI
+
 
 struct ContentView: View {
     var body: some View {
@@ -89,6 +117,8 @@ struct ContentView: View {
             List {
                 ForEach(films) { film in
                     Text(film.title)
+                    //comment test
+                    let _ = Swift.print(film)
                 }
             }
         }
